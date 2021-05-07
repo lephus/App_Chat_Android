@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Home"
+        android:id="@+id/idhome"
+         />
+    <item android:title="Chat"
+        android:id="@+id/idchat1"
+        android:icon="@android:drawable/ic_dialog_email"
+        app:showAsAction="always"
+        />
+    <item android:title="Setting System"
+        android:id="@+id/idsetting"
+        />
+    <item android:title="Profile"
+        android:id="@+id/idprofile"
+        />
+    <item android:title="LogOut"
+        android:id="@+id/idlogout"/>
+</menu>

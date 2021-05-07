@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView
+        android:id="@+id/listjoin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EEEE"
+        android:layout_weight="2"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="nội dung chat"
+        android:background="#ccffff"
+        />
+    <ListView
+        android:id="@+id/listchat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/contentchat"
+            android:layout_width="0dp"
+            android:hint="Nhập tin nhắn..."
+            android:layout_weight="8"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/btsend"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/send"
+            android:layout_height="match_parent"/>
+        <ImageButton
+            android:id="@+id/btnewfeed"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/newfeed"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:orientation="vertical">
+
+    <ListView
+
+        android:id="@+id/listRoom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:background="#ccffcc"
+        android:text="DANH SÁCH BẠN BÈ: "
+        />
+    <ListView
+        android:background="#ccc"
+        android:id="@+id/thanhvien"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        >
+        <EditText
+            android:id="@+id/edtaddthanhvien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="nhập/chọn id người nhận, VD: 1-2-3"
+            />
+        <ImageButton
+            android:id="@+id/btaddroom"
+            android:src="@drawable/add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+
+           />
+    </LinearLayout>
+</LinearLayout>
